@@ -80,7 +80,9 @@
     ],
     "answer": [
         {
-            "message": "You should call 911 immediately."
+            "conversation": 1,
+            "human_message": "I have chest pain and shortness of breath.",
+            "ai_message": "You should call 911 immediately."
         }
     ]
   }
