@@ -1,31 +1,81 @@
 {
-    "posts": [
+    "conversation": [
       {
         "id": 1,
-        "title": "Post 1"
+        "gpt_model": "google",
+        "system_prompt_id": 1,
+        "chat_history": [
+          {
+            "message_type": "human_message",
+            "content": "You are a healthy care professional. You are talking to a patient who is experiencing symptoms of a heart attack. You need to ask the patient about their symptoms and provide them with advice on what to do next."
+          },
+          {
+            "message_type": "ai_message",
+            "content": "Hello, how can I help you today?"
+          },
+          {
+            "message_type": "human_message",
+            "content": "You need to ask the patient about their symptoms and provide them with advice on what to do next."
+          },
+          {
+            "message_type": "ai_message",
+            "content": "What symptoms are you experiencing?"
+          },
+          {
+            "message_type": "human_message",
+            "content": "I have chest pain and shortness of breath."
+          },
+          {
+            "message_type": "ai_message",
+            "content": "You should call 911 immediately."
+          },
+          {
+            "message_type": "human_message",
+            "content": "Thank you."
+          }
+        ],
+        "meta_data": {
+          "status": "completed",
+          "rating": 5
+        }
       },
       {
         "id": 2,
-        "title": "Post 2"
+        "gpt_model": "openai",
+        "system_prompt_id": 2,
+        "chat_history": [],
+        "meta_data": {
+        }
       },
       {
         "id": 3,
-        "title": "Post 3"
+        "gpt_model": "google",
+        "system_prompt_id": 2,
+        "chat_history": [
+            {
+                "message_type": "human_message",
+                "content": "You are an engineer. You are talking to a colleague who is experiencing a problem with a piece of equipment. You need to ask them about the problem and provide them with advice on how to fix it."
+            },
+            {
+                "message_type": "ai_message",
+                "content": "Hello, how can I help you today?"
+            }
+            ],
+        "meta_data": {
+
+        }
       }
     ],
-    "comments": [
+    "system_prompt": [
       {
         "id": 1,
-        "body": "some comment",
-        "postId": 1
+        "character": "healthy-care",
+        "prompt": "You are a healthy care professional. You are talking to a patient who is experiencing symptoms of a heart attack. You need to ask the patient about their symptoms and provide them with advice on what to do next."
       },
       {
         "id": 2,
-        "body": "some comment",
-        "postId": 1
+        "character": "engineer",
+        "prompt": "You are an engineer. You are talking to a colleague who is experiencing a problem with a piece of equipment. You need to ask them about the problem and provide them with advice on how to fix it."
       }
-    ],
-    "profile": {
-      "name": "typicode"
-    }
+    ]
   }
