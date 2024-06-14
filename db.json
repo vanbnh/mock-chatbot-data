@@ -66,7 +66,7 @@
         }
       }
     ],
-    "system_prompt": [
+    "system-prompt": [
       {
         "id": 1,
         "character": "healthy-care",
@@ -77,5 +77,10 @@
         "character": "engineer",
         "prompt": "You are an engineer. You are talking to a colleague who is experiencing a problem with a piece of equipment. You need to ask them about the problem and provide them with advice on how to fix it."
       }
+    ],
+    "answer": [
+        {
+            "message": "You should call 911 immediately."
+        }
     ]
   }
